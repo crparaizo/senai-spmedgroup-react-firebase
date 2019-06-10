@@ -1,0 +1,232 @@
+
+
+/* Menu-consulta será fixo
+Div maior do main será fix */
+
+/* Lembrete: não há body no React */
+/* Ainda não foi implementada a responsividade*/
+
+
+
+*{
+    font-family: 'Rokkitt', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.map{
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* @media screen and (max-width: 1360px)  */
+
+/* Alterar FONTE das letras */
+.topo-localizacoes{
+    float: right;
+     width: 80%;
+}
+
+.topo-localizacoes__quebra{
+    background-color: rgb(191, 228, 253);
+    /* #81AFD7 */
+    width: 100%;
+    height: 0.8em;
+    margin: 0 0 1em 0;
+}
+
+.topo-localizacoes__quebra--modificado{
+    margin: 1em 0 0 0;
+}
+
+.topo-localizacoes__h1{
+    font-size: 6vh;
+    text-align: center;
+    color: #a2daff;
+    text-shadow: -1px 0 rgb(98, 98, 148), 0 1px rgb(98, 98, 148), 1px 0 rgb(98, 98, 148), 0 -1px rgb(98, 98, 148);
+}
+
+.topo-localizacoes__item{
+    float: right;
+    /* margin-right: 1em; */
+    margin-right: 3em;
+    border: 5px solid rgb(191, 228, 253);
+    width: 13em;
+}
+
+.topo-localizacoes__button{
+    height: 2em;
+    width: 5em;
+    margin-left: 3em;
+}
+
+.menu-localizacoes{
+    float: left;
+    width: 20%;
+    border: 1em solid rgb(191, 228, 253);
+    text-align: center;
+    padding:  1em;
+}
+
+.menu-localizacoes__titulo{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.menu-localizacoes__imagem{
+    width: 6em;
+    margin-bottom: 1.2em;
+}
+
+.menu-localizacoes__link{
+    font-size: 1.5em;
+    color: green;
+    text-transform: uppercase;
+}
+
+.menu-localizacoes__link:hover{
+    color: red;
+}
+
+.links-localizacoes__item{
+    list-style-type: none;
+    font-size: 1.47em;
+}
+
+.links-localizacoes__titulo{
+    color: darkorange;
+    text-decoration: none;    
+}
+
+.links-localizacoes__titulo:hover{
+    color: #aaaeff;
+}
+
+.links-localizacoes__titulo--selecionado{
+    color: #ffb59c;
+}
+
+.links-localizacoes__titulo--selecionado:hover{
+    color: #9cffcf;
+}
+
+.links-localizacoes__quebra{
+    height: 2px;
+    background-color: hsla(15, 100%, 81%, 0.301);
+    margin: 1em 0;
+}
+
+.listas-localizacoes__button{
+    /* margin: 3em 0 0 4.2em; */
+    margin: 2em 0 0 7.2em;
+    width: 6em;
+    height: 3em;
+    text-decoration: underline;
+    font-size: 1em;
+}
+
+.listas-localizacoes__button--lista{
+    text-decoration: none;
+    background-color: #a2daff;
+    border: none;
+    color: white;
+}
+
+.listas-localizacoes__button--cadastrar{
+    margin: 2em 0 0 0;
+    text-decoration-color: darkorange;
+    color: darkorange;
+    background-color: rgba(211, 211, 211, 0.61);
+    border: none;
+}
+
+.contorno{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;    
+}
+
+.tabela-localizacoes{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    border: 1em solid #a2daff44;
+    text-align: center;
+    margin: 0 3em; 
+    overflow: scroll;
+    height: 27em;  
+}
+
+.tabela-localizacoes__real{    
+    display: inline-table;
+    border-collapse: collapse;
+}
+
+.tabela-localizacoes-head__titulo{
+    padding: 0 1em;
+    border: 5px solid rgba(107, 161, 156, 0.568);
+}
+
+.tabela-localizacoes-body_dado{
+    padding: 0 1em;
+    border: 5px solid rgba(107, 161, 156, 0.568);
+}
+
+.botoes-localizacoes{
+    display: flex;
+    flex-direction: column;
+}
+
+.botoes-localizacoes__item{
+    width: 5em;
+    height: 1.92em;
+    text-decoration: underline;
+}
+
+.botoes-localizacoes__item--alterar{
+    background-color: gray;
+    color: white;
+    text-decoration-color: white;
+}
+
+.botoes-localizacoes__item--deletar{
+    background-color: darkred;
+    color: white;
+    text-decoration-color: white;
+}
+
+.formulario-localizacoes{
+    background-color: #c2dff144;
+    /* display: flex;   */
+    flex-direction: column; 
+    padding: 1.60em;
+    
+}
+
+.formulario-localizacoes__item{
+    width: 20em;
+    height: 5em;
+    padding: 0 0 0 2em;
+    font-size: 0.9em;
+    color: darkviolet;
+    background-color: #c2dff11e;
+
+    border-top: none;
+    border-bottom: 2px solid rgba(255, 140, 0, 0.301);
+    border-left: none;
+    border-right: none;
+}
+
+.formulario-localizacoes__button{
+    height: 5vh;
+    width: 5vw;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+    background-color: gray;
+    margin: 2em 12em 0 12em;
+}
